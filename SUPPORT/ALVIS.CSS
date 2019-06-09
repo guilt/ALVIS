@@ -1,0 +1,145 @@
+body {
+    background-color: #819F61;
+    padding: 0px;
+    text-align: left;
+}
+
+div.mainbox {
+    width: 750px; 
+    margin: auto;
+    border: 2px solid black;
+    padding-bottom: 3px;
+}
+
+h2.title {
+    text-align: center;
+    width: 100%;
+    font: bold 16px Century Gothic, Microsoft Sans Serif;
+    letter-spacing: 5px;
+    margin: 0px;
+}
+
+h3.title {
+    text-align: left;
+    width: 100%;
+    font: bold 18px Arial;
+    color: #F22244;
+    letter-spacing: 3px;
+    margin: 6px;
+}
+
+h3.hidden {
+    display: none;
+}
+
+h4.title {
+    text-align: left;
+    width: 100%;
+    font: bold 16px Arial;
+    text-decoration: none;
+    color: #F22244;
+    letter-spacing: 1px;
+    margin: 6px;
+}
+
+h5.title {
+    text-align: right;
+    width: 100%;
+    font: bold 16px Arial;
+    text-decoration: none;
+    color: #F22244;
+    letter-spacing: 1px;
+    margin: 6px;
+}
+
+h5.title a {
+    text-align: right;
+    width: 100%;
+    font: bold 16px Arial;
+    color: #F22244;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 6px;
+}
+
+h5.title a:hover {
+    text-align: right;
+    width: 100%;
+    font: bold 16px Arial;
+    color: #F28811;
+    letter-spacing: 1px;
+    margin: 6px;
+}
+
+ul.genlist {
+    font: 14px Arial;
+    letter-spacing: 1px;
+    margin: 4px 0px 10px 1px;
+    padding: 0px;
+}
+
+ul.genlist li {
+    display: inline;
+    margin: 16px;
+    padding: 0px;
+    border: 1px;
+}
+
+ul.menubar {
+    font: 14px Arial;
+    letter-spacing: 1px;
+    margin: 4px 0px 19px 1px;
+    padding: 0px;
+}
+
+ul.menubar li {
+    display: inline;
+    margin: 15px;
+    padding: 0px;
+    border: 1px;
+}
+
+ul.menubar a {
+    font: bold 14px Arial;
+    text-decoration: none;
+    color: #000000;
+}
+
+ul.menubar a:hover {
+    font: bold 14px Arial;
+    color: #72D8B4;
+}
+
+p.maintext {
+    font: 17px Arial;
+    color: #000000;
+    margin: 6px;
+}
+
+p.maintext a {
+    font: 15px Trebuchet MS, Arial;
+    text-decoration: underline;
+    color: #000000;
+}
+
+p.maintext a:hover {
+    font: 15px Trebuchet MS, Arial;
+    color: #FFEECC;
+}
+
+table.gentable {
+    font: 14px Trebuchet MS, Arial;
+    color: #000000;
+    border: 2px;
+}
+
+table.gentable a {
+    font: 14px Trebuchet MS, Arial;
+    text-decoration: underline;
+    color: #000000;
+}
+
+table.gentable a:hover {
+    font: 14px Trebuchet MS, Arial;
+    color: #77B780;
+}   
