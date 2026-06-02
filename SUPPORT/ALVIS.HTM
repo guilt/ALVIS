@@ -3,9 +3,7 @@
 <HEAD>
 <TITLE>ALVIS Help</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=windows-1252">
-<STYLE type=text/css>@import url( ./alvis.css );
-</STYLE>
-<META content="MSHTML 6.00.2600.0" name=GENERATOR>
+<LINK REL=stylesheet TYPE=text/css HREF="./alvis.css">
 </HEAD>
 
 <BODY>
@@ -19,161 +17,135 @@
   <LI><A href="#release">Release Notes</A></LI><BR>
   <LI><A href="#install">Installation</A></LI><BR>
   <LI><A href="#features">Features and Usage</A></LI><BR>
-  <LI><A href="#legal">Legal Stuff</A></LI><BR>
+  <LI><A href="#build">Building from Source</A></LI><BR>
+  <LI><A href="#legal">License</A></LI><BR>
   <LI><A href="#support">Support</A></LI><BR>
 </UL>
 <HR>
 
-
-<A name="intro"></A><H4 class=title>Introduction</H4>
+<A NAME="intro"></A><H4 class=title>Introduction</H4>
 <P class=maintext>
 Congratulations, you have just procured the most Advanced Visualization thingy ever created in the history of mankind.
 <BR><BR>
 Yessir ... it's here ... and here to stay.
 <BR><BR>
 Just a few of the reasons why you'll love it...
-<BR>
+</P>
 <UL class=genlist>
  <LI>>> It's free - wont cost ya a dime</LI><BR>
  <LI>>> Product Support available</LI><BR>
- <LI>>> Ask for changes, and you'll get them</LI><BR>
  <LI>>> Your friends will like you more</LI><BR>
- <LI>>> Use with caution at parties - WOW! look
-at the number of girls surrounding you! </LI><BR>
+ <LI>>> Use with caution at parties - WOW! look at the number of girls surrounding you!</LI><BR>
  <LI>>> Everyone will say you're the coolest</LI><BR>
 </UL>
-</P>
 <P class=maintext>
 er... Nothing of that sort. This one's pretty simple. Really.
 <BR><BR>
-ALVIS is a visualization for WINAMP that has been created to enhance
-your viewing pleasure, while you listen to music.
+ALVIS is a visualization for WINAMP that has been created to enhance your viewing pleasure, while you listen to music.
 </P>
 <H5 class=title><A HREF="#top">top</A></H5>
 <HR>
 
-
-<A name="release"></A><H4 class=title>Release Notes</H4>
+<A NAME="release"></A><H4 class=title>Release Notes</H4>
 <P class=maintext>
-This is more like a WINAMP Visualization in Allegro SDK, than a
-plugin itself. It is based on:
+This is more like a WINAMP Visualization in Allegro SDK, than a plugin itself. It is based on:
+</P>
 <UL class=genlist>
  <LI># Vis_MiniSDK v1.01 by Justin Frankel</LI><BR>
  <LI># Vis_MegaSDK v1.03 by Ryan Geiss</LI><BR>
  <LI># WA502_SDK by Francis Gastellu</LI><BR>
  <LI># Allegro</LI><BR>
 </UL>
-<BR>
 </P>
 <H5 class=title><A HREF="#top">top</A></H5>
 <HR>
 
-<A name="install"></A><H4 class=title>Installation</H4>
+<A NAME="install"></A><H4 class=title>Installation</H4>
 <P class=maintext>
-The installation for this plugin (ALVIS.EXE) has been created using Nullsoft Scriptable
-<BR>
-Install System (NSIS). Installation extracts the following files into WINAMP's Plugins
-<BR>
-directory:
+The installation for this plugin has been created using Nullsoft Scriptable Install System (NSIS). Installation extracts the following files into Winamp's Plugins directory:
 <BR><BR>
 <UL class=genlist>
- <LI>1. VIS_ALVIS.DLL - the visualization DLL or simply the ALVIS Plugin</LI><BR>
- <LI>2. BOOM.BMP - the Boom Box background</LI><BR>
- <LI>2. ALVIS.HTM - this HTML help/reference page</LI><BR>
- <LI>2. ALVIS.CSS - this page's Style sheet</LI><BR>
+ <LI>1. VIS_ALVIS.DLL - the visualization plugin</LI><BR>
+ <LI>2. ALLEG42.DLL - Allegro runtime library (required)</LI><BR>
+ <LI>3. BOOM.BMP - the Boom Box background</LI><BR>
+ <LI>4. ALVIS.HTM - this help page</LI><BR>
 </UL>
-<BR>
-</P>
 <H5 class=title><A HREF="#top">top</A></H5>
 <HR>
 
-<A name="features"></A><H4 class=title>Features and Usage</H4>
+<A NAME="features"></A><H4 class=title>Features and Usage</H4>
 <P class=maintext>
-It can operate in five modes as of now:<BR><BR>
-<UL class=genlist>
- <LI># <I>Waveform Analyser</I> (aka) Oscilloscope (erstwhile Ding Dong)<BR>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Ride the waves through the left and right channels.<BR>
- </LI><BR><BR>
- <LI># <I>Spectrum Analyser</I> (formerly called Ping Pong)<BR>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  A spectral graph never looked more convincing.<BR>
- </LI><BR><BR>
- <LI># <I>VU Analyser</I> (previously VU Meter)<BR>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  A unique blend of lines and bars used to bring out a funky music-meter.<BR>
- </LI><BR><BR>
- <LI># <I>The Grind</I> (special thanks to Prasanna)<BR>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Watch the energetic grind wheels as they roll to the beats.<BR>
- </LI><BR><BR>
- <LI># <I>Boom Box - Explosion</I> (formerly called Experimentz)<BR>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Be prepared for an explosive experience.<BR>
-</LI>
-</UL>
+It can operate in five modes:
 </P>
+<UL class=genlist>
+ <LI># <I>Waveform Analyser</I> - oscilloscope display for left/right channels</LI><BR>
+ <LI># <I>Spectrum Analyser</I> - spectral frequency graph</LI><BR>
+ <LI># <I>VU Analyser</I> - audio level meter with bars and lines</LI><BR>
+ <LI># <I>The Grind</I> - beat-driven animated ellipses</LI><BR>
+ <LI># <I>Boom Box - Explosion</I> - radial speaker explosion with waveform or spectrum</LI><BR>
+</UL>
 <P class=maintext>
-In the Visualization Window, in addition to the standard
-WINAMP commands, use the following:<BR><BR>
+In the Visualization Window, in addition to the standard WINAMP commands, use the following:<BR><BR>
 <CENTER>
-<TABLE COLS=2 BORDER=1 CELLPADDING=5>
+<TABLE CLASS=GENTABLE BORDER=1 CELLPADDING=5>
 <TR><TD><B>Key</B></TD><TD><B>Function</B></TD></TR>
-<TR><TD>&nbsp;&nbsp;Y</TD><TD>Toggle OSD (On-Screen Display) On/Off</TD></TR>
+<TR><TD>&nbsp;&nbsp;Y</TD><TD>Toggle OSD On/Off</TD></TR>
 <TR><TD>&nbsp;&nbsp;T</TD><TD>Toggle Boom Box Background On/Off</TD></TR>
-<TR><TD>&nbsp;W</TD><TD>Switch Boom Box mode: Waveform and Spectrum</TD></TR>
+<TR><TD>&nbsp;W</TD><TD>Switch Boom Box mode (Waveform/Spectrum)</TD></TR>
 </TABLE>
 </CENTER>
 </P>
 <H5 class=title><A HREF="#top">top</A></H5>
 <HR>
 
-<A name="legal"></A><H4 class=title>Legal Stuff</H4>
+<A NAME="build"></A><H4 class=title>Building from Source</H4>
 <P class=maintext>
-This is what our and many others' disclaimer says:
+Requires MinGW/GCC and Allegro 4.x. Set <CODE>EXTDEV</CODE> to your SDK root, then run:
 <BR><BR>
-#include &lt;std_disclaimer.h&gt;
+<CODE>BUILD.BAT</CODE>
 <BR><BR>
-"I do not accept responsibility for any effects, adverse or otherwise, 
-that this code may have on you, your computer, your sanity, your dog,  
-and anything else that you can think of. Use it at your own risk."
-<BR><BR>
+Output goes to <CODE>DIST\</CODE>. See DEVELOP.MD for details.
 </P>
 <H5 class=title><A HREF="#top">top</A></H5>
 <HR>
 
-<A name="support"></A><H4 class=title>Support</H4>
+<A NAME="legal"></A><H4 class=title>License</H4>
 <P class=maintext>
-1. <B>Karthik Kumar V</B>
+This project is licensed under the MIT License.
+<BR><BR>
+Copyright &copy; 2004-Present Karthik Kumar Viswanathan and Nikhil Karnad.
+<BR><BR>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<BR><BR>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+<BR><BR>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</P>
+<H5 class=title><A HREF="#top">top</A></H5>
+<HR>
+
+<A NAME="support"></A><H4 class=title>Support</H4>
+<P class=maintext>
+1. <B>Karthik Kumar Viswanathan</B> (@guilt)
 <BR>
 &nbsp;&nbsp;&nbsp;
-I'm not much of a programmer myself, but I'll try to help.
-<BR>
-&nbsp;&nbsp;&nbsp;
-E-mail: 
-<A HREF="mailto:kkeinstein@rediffmail.com">Karthik "Guilt" Kumar V</A>
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;And visit my page to check out some of my other Programs:
-<A HREF="http://www.geocities.com/kkgoesnuts">
-http://www.geocities.com/kkgoesnuts
-</A>
+E-mail: <A HREF="mailto:karthikkumar@gmail.com">karthikkumar@gmail.com</A>
 <BR><BR>
 
-2. <B>Nikhil Karnad</B>
+2. <B>Nikhil Karnad</B> (@scribbleink)
 <BR>
 &nbsp;&nbsp;&nbsp;
-I designed the "Boom Box - Explosion" visualization, by following Karthik's lead, using his
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;excellent framework.
+I designed the "Boom Box - Explosion" visualization, by following Karthik's lead, using his excellent framework.
 <BR>
 &nbsp;&nbsp;&nbsp;
-E-mail: 
-<A HREF="mailto:nik_k84@yahoo.com">Nikhil Karnad</A>
+E-mail: <A HREF="mailto:nikhil.karnad@gmail.com">nikhil.karnad@gmail.com</A>
 <BR><BR>
-That's it. Thank you for getting this plugin.
+
+That's it. Thank you for downloading this plugin.
 <BR><BR>
 </P>
 <H5 class=title><A HREF="#top">top</A></H5>
 
+</DIV>
 </BODY>
 </HTML>

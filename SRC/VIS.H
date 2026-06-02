@@ -31,6 +31,8 @@
 // ints are 32 bits, and structure members are aligned on the default 8 byte boundaries
 // tested with VC++ 4.2 and 5.0
 
+#ifndef VIS_SDK_H
+#define VIS_SDK_H
 
 typedef struct winampVisModule {
   char *description; // description of module
@@ -69,3 +71,5 @@ typedef winampVisHeader* (*winampVisGetHeaderType)();
 #define VIS_HDRVER 0x101
 
 //BOOL CALLBACK ConfigDialogProc(HWND  hwndDlg, UINT  uMsg, WPARAM  wParam, LPARAM  lParam);
+
+#endif

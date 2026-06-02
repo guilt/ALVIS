@@ -1,0 +1,6 @@
+*.OBJ
+*.O
+*.UPX
+*.TXT
+OBJ/
+DIST/

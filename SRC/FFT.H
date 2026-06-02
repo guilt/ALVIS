@@ -25,26 +25,10 @@
 #ifndef FFT_H
 #define FFT_H
 
-#define NFREQ 512 /* Powers of 2 */
+#define FFT_BINS 512
 
-int m_ready;
-int m_samples_in;
-
-int  FFT_Init(int samples_in);
-void time_to_frequency_domain(float *in_wavedata, float *out_spectraldata);
-int  GetNumFreq() { return NFREQ; };
+int  FFT_Init(int samplesIn);
+void FFT_TimeToFrequencyDomain(float *inWaveData, float *outSpectralData);
 void FFT_CleanUp();
 
-void InitEnvelopeTable(float power);
-void InitEqualizeTable();
-void InitBitRevTable();
-void InitCosSinTable();
-    
-int   *bitrevtable=NULL;
-float *envelope=NULL;
-float *equalize=NULL;
-float *temp1=NULL;
-float *temp2=NULL;
-float (*cossintable)[2]=NULL;
-
-#endif /* FFT_H */
+#endif

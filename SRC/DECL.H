@@ -1,0 +1,18 @@
+#ifndef DECL_H
+#define DECL_H
+
+#define PI 3.141592653589793238462643383279502884197169399f
+#define MAX_CONFIG_X 4000
+#define MAX_CONFIG_Y 3000
+#define SZLEN 128
+
+enum {
+    WAVEFORM_SAMPLES = 576,
+    DISPLAY_SAMPLES  = 288,
+    FREQ_BANDS       =  3,
+    MAX_DISPLAY_CH   =  2,
+    MAX_AUDIO_CH     =  8,
+    BLEND_FPS        = 14,
+};
+
+#endif

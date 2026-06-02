@@ -1,0 +1,32 @@
+#include <windows.h>
+#include "ver.h"
+
+allegro_icon ICON DISCARDABLE VIconFileName
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VERSION_MAJOR, VERSION_MINOR, VERSION_RELEASE, VERSION_BUILD
+PRODUCTVERSION VERSION_MAJOR, VERSION_MINOR, VERSION_RELEASE, VERSION_BUILD
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+BEGIN
+   BLOCK "StringFileInfo"
+   BEGIN
+      BLOCK VCountryCodePageBlock
+      BEGIN
+         VALUE "CompanyName", VCompanyName
+         VALUE "FileVersion", VFileVersion
+         VALUE "FileDescription", VFileDescription
+         VALUE "LegalCopyright", VLegalCopyright
+         VALUE "LegalTrademarks", VLegalTrademarks
+         VALUE "Comments", VComments
+         VALUE "InternalName", VInternalName
+         VALUE "Original Filename", VOriginalFilename
+         VALUE "ProductName", VProductName
+         VALUE "ProductVersion", VProductVersion
+      END
+   END
+   BLOCK "VarFileInfo" 
+   BEGIN
+      VALUE "Translation", VCountry, VLanguage
+   END
+END
